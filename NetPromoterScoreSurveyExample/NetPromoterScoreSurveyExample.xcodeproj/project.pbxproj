@@ -17,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		540ECE4704919F1C6B36DC42 /* Pods-NetPromoterScoreSurveyExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetPromoterScoreSurveyExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NetPromoterScoreSurveyExample/Pods-NetPromoterScoreSurveyExample.debug.xcconfig"; sourceTree = "<group>"; };
+		7729156E2417CC4B00CE6F59 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Package.swift; path = ../Package.swift; sourceTree = "<group>"; };
 		D42E52F79105CF155A352D09 /* Pods-NetPromoterScoreSurveyExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetPromoterScoreSurveyExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-NetPromoterScoreSurveyExample/Pods-NetPromoterScoreSurveyExample.release.xcconfig"; sourceTree = "<group>"; };
 		DCA8593E9BCCFC32E98EC410 /* Pods_NetPromoterScoreSurveyExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetPromoterScoreSurveyExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F15368C41F7D1AB6008343F5 /* NetPromoterScoreSurveyExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetPromoterScoreSurveyExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,6 +61,7 @@
 		F15368BB1F7D1AB6008343F5 = {
 			isa = PBXGroup;
 			children = (
+				7729156E2417CC4B00CE6F59 /* Package.swift */,
 				F15368C61F7D1AB6008343F5 /* NetPromoterScoreSurveyExample */,
 				F15368C51F7D1AB6008343F5 /* Products */,
 				09BA7EF2FEAED51B4C0D6DCC /* Pods */,

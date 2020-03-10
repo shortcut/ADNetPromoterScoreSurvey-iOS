@@ -10,6 +10,13 @@ import PackageDescription
 
 let package = Package(
     name: "ADNetPromoterScoreSurvey",
+    platforms: [.iOS("9.0")],
+    products: [
+        .library(
+            name: "ADNetPromoterScoreSurvey",
+            targets: ["ADNetPromoterScoreSurvey"]
+        )
+    ],
     dependencies: [
     ],
     targets: [
