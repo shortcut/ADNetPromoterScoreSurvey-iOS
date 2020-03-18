@@ -17,11 +17,13 @@ let package = Package(
     targets: [
         .target(
             name: "ADNetPromoterScoreSurvey",
-            dependencies: []
+            dependencies: [],
+            path: "Sources/ADNetPromoterScoreSurvey"
         ),
         .testTarget(
             name: "ADNetPromoterScoreSurveyTests",
-            dependencies: ["ADNetPromoterScoreSurvey"]
+            dependencies: ["ADNetPromoterScoreSurvey"],
+            path: "Tests/ADNetPromoterScoreSurveyTests"
         ),
     ]
 )
