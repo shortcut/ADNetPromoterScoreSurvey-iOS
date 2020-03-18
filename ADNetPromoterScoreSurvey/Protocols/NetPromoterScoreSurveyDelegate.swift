@@ -8,8 +8,8 @@
 
 import Foundation
 
-@objc public  protocol NetPromoterScoreSurveyDelegate : class{
-    
+@objc public  protocol NetPromoterScoreSurveyDelegate: class {
+
     @objc optional func netPromoterScoreViewDidChange(_ npsSurvey: ADNetPromoterScoreSurvey, toView: NetPromoterScoreViewType)
     @objc optional func netPromoterScoreDidPressSendScore(_ npsSurvey: ADNetPromoterScoreSurvey, selectedScore: Int)
     @objc optional func netPromoterScoreDidChangeScoreValue(_ npsSurvey: ADNetPromoterScoreSurvey, newScoreValue: Int)

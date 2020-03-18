@@ -9,12 +9,12 @@
 import UIKit
 
 protocol NPSSurveyViewProtocol {
-    
-    var delegate : NPSSurveyViewDelegate? {get set}
-    
+
+    var delegate: NPSSurveyViewDelegate? {get set}
+
     func showSurvey(onViewController viewController: UIViewController)
     func closeSurvey()
-    
+
     func continueToSendDetailsView(promoterType: NetPromoterType)
     func backToSendScoreView()
     func showThankYouView()

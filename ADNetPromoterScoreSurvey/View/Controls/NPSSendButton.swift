@@ -9,9 +9,9 @@
 import UIKit
 
 class NPSSendButton: UIButton {
-    
+
     override func awakeFromNib() {
-        
+
         super.awakeFromNib()
         self.layer.cornerRadius = 3
     }

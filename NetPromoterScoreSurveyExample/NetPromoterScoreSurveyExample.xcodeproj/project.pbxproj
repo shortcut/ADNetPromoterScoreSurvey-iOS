@@ -3,11 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		271168C6FF972A6216D94AEA /* Pods_NetPromoterScoreSurveyExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCA8593E9BCCFC32E98EC410 /* Pods_NetPromoterScoreSurveyExample.framework */; };
+		929B42892422221B009D422C /* ADNetPromoterScoreSurvey in Frameworks */ = {isa = PBXBuildFile; productRef = 929B42882422221B009D422C /* ADNetPromoterScoreSurvey */; };
 		F15368C81F7D1AB6008343F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15368C71F7D1AB6008343F5 /* AppDelegate.swift */; };
 		F15368CA1F7D1AB6008343F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15368C91F7D1AB6008343F5 /* ViewController.swift */; };
 		F15368CD1F7D1AB6008343F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F15368CB1F7D1AB6008343F5 /* Main.storyboard */; };
@@ -16,10 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		540ECE4704919F1C6B36DC42 /* Pods-NetPromoterScoreSurveyExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetPromoterScoreSurveyExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NetPromoterScoreSurveyExample/Pods-NetPromoterScoreSurveyExample.debug.xcconfig"; sourceTree = "<group>"; };
-		7729156E2417CC4B00CE6F59 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Package.swift; path = ../Package.swift; sourceTree = "<group>"; };
-		D42E52F79105CF155A352D09 /* Pods-NetPromoterScoreSurveyExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetPromoterScoreSurveyExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-NetPromoterScoreSurveyExample/Pods-NetPromoterScoreSurveyExample.release.xcconfig"; sourceTree = "<group>"; };
-		DCA8593E9BCCFC32E98EC410 /* Pods_NetPromoterScoreSurveyExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetPromoterScoreSurveyExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		929B428724222186009D422C /* ADNetPromoterScoreSurvey-iOS */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "ADNetPromoterScoreSurvey-iOS"; path = ..; sourceTree = "<group>"; };
 		F15368C41F7D1AB6008343F5 /* NetPromoterScoreSurveyExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetPromoterScoreSurveyExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F15368C71F7D1AB6008343F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F15368C91F7D1AB6008343F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -34,26 +31,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				271168C6FF972A6216D94AEA /* Pods_NetPromoterScoreSurveyExample.framework in Frameworks */,
+				929B42892422221B009D422C /* ADNetPromoterScoreSurvey in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		09BA7EF2FEAED51B4C0D6DCC /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				540ECE4704919F1C6B36DC42 /* Pods-NetPromoterScoreSurveyExample.debug.xcconfig */,
-				D42E52F79105CF155A352D09 /* Pods-NetPromoterScoreSurveyExample.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		9CB2F4DB78454E76EDF19D87 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DCA8593E9BCCFC32E98EC410 /* Pods_NetPromoterScoreSurveyExample.framework */,
+				929B428724222186009D422C /* ADNetPromoterScoreSurvey-iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -61,10 +49,8 @@
 		F15368BB1F7D1AB6008343F5 = {
 			isa = PBXGroup;
 			children = (
-				7729156E2417CC4B00CE6F59 /* Package.swift */,
 				F15368C61F7D1AB6008343F5 /* NetPromoterScoreSurveyExample */,
 				F15368C51F7D1AB6008343F5 /* Products */,
-				09BA7EF2FEAED51B4C0D6DCC /* Pods */,
 				9CB2F4DB78454E76EDF19D87 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -97,17 +83,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F15368D61F7D1AB6008343F5 /* Build configuration list for PBXNativeTarget "NetPromoterScoreSurveyExample" */;
 			buildPhases = (
-				03049BC10F9A1F14FF62BB47 /* [CP] Check Pods Manifest.lock */,
 				F15368C01F7D1AB6008343F5 /* Sources */,
 				F15368C11F7D1AB6008343F5 /* Frameworks */,
 				F15368C21F7D1AB6008343F5 /* Resources */,
-				EABE85135DE69F9D94076957 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = NetPromoterScoreSurveyExample;
+			packageProductDependencies = (
+				929B42882422221B009D422C /* ADNetPromoterScoreSurvey */,
+			);
 			productName = NetPromoterScoreSurveyExample;
 			productReference = F15368C41F7D1AB6008343F5 /* NetPromoterScoreSurveyExample.app */;
 			productType = "com.apple.product-type.application";
@@ -159,45 +146,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		03049BC10F9A1F14FF62BB47 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-NetPromoterScoreSurveyExample-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EABE85135DE69F9D94076957 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NetPromoterScoreSurveyExample/Pods-NetPromoterScoreSurveyExample-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/ADNetPromoterScoreSurvey/ADNetPromoterScoreSurvey.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ADNetPromoterScoreSurvey.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NetPromoterScoreSurveyExample/Pods-NetPromoterScoreSurveyExample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F15368C01F7D1AB6008343F5 /* Sources */ = {
@@ -336,7 +284,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -344,12 +293,15 @@
 		};
 		F15368D71F7D1AB6008343F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 540ECE4704919F1C6B36DC42 /* Pods-NetPromoterScoreSurveyExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = NetPromoterScoreSurveyExample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.autodesk.NetPromoterScoreSurveyExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -358,12 +310,15 @@
 		};
 		F15368D81F7D1AB6008343F5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D42E52F79105CF155A352D09 /* Pods-NetPromoterScoreSurveyExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = NetPromoterScoreSurveyExample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.autodesk.NetPromoterScoreSurveyExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -392,6 +347,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		929B42882422221B009D422C /* ADNetPromoterScoreSurvey */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ADNetPromoterScoreSurvey;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F15368BC1F7D1AB6008343F5 /* Project object */;
 }
