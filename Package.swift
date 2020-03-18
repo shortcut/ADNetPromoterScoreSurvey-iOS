@@ -1,10 +1,5 @@
-//
-//  Package.swift
-//  ADNetPromoterScoreSurvey
-//
-//  Created by John Ditman on 10/03/2020.
-//  Copyright © 2020 Shortcut AS. All rights reserved.
-//
+// swift-tools-version:5.1
+// The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
 
