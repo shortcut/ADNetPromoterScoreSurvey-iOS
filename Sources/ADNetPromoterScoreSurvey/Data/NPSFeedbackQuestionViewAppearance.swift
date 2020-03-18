@@ -8,8 +8,8 @@
 
 import UIKit
 
-@objcMembers public class NPSFeedbackQuestionViewAppearance : NSObject{
-    
+@objcMembers public class NPSFeedbackQuestionViewAppearance: NSObject {
+
     public var titleForPromoter             = "Thanks for your feedback!"
     public var titleForPassive              = "Thanks for your feedback!"
     public var titleForDetractor            = "We appreciate your feedback"
@@ -18,19 +18,19 @@ import UIKit
     public var placeholderForDetractor      = "Let us know how we can make the app better"
     public var sendButtonTitle              = "SEND"
     public var editScoreButtonTitle         = "EDIT SCORE"
-    
-    public var titleFont                : UIFont?
-    public var placeholderFont          : UIFont?
-    public var textFieldFont            : UIFont?
-    public var sendButtonTitleFont      : UIFont?
-    public var editScoreButtonTitleFont : UIFont?
- 
-    public var backgroundColor              : UIColor?
-    public var titleFontColor               : UIColor?
-    public var placehoderFontColor          : UIColor?
-    public var textFieldFontColor           : UIColor?
-    public var sendButtonTitleColor         : UIColor?
-    public var sendButtonBackgroundColor    : UIColor?
-    public var editScoreButtonTextColor     : UIColor?
-    public var feedbackTextBlackgroundColor : UIColor?
+
+    public var titleFont: UIFont?
+    public var placeholderFont: UIFont?
+    public var textFieldFont: UIFont?
+    public var sendButtonTitleFont: UIFont?
+    public var editScoreButtonTitleFont: UIFont?
+
+    public var backgroundColor: UIColor?
+    public var titleFontColor: UIColor?
+    public var placehoderFontColor: UIColor?
+    public var textFieldFontColor: UIColor?
+    public var sendButtonTitleColor: UIColor?
+    public var sendButtonBackgroundColor: UIColor?
+    public var editScoreButtonTextColor: UIColor?
+    public var feedbackTextBlackgroundColor: UIColor?
 }

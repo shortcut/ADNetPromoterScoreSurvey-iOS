@@ -24,6 +24,6 @@ let package = Package(
             name: "ADNetPromoterScoreSurveyTests",
             dependencies: ["ADNetPromoterScoreSurvey"],
             path: "Tests/ADNetPromoterScoreSurveyTests"
-        ),
+        )
     ]
 )

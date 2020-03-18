@@ -17,47 +17,47 @@ class NetPromoterScoreSurveyDelegateMock: NetPromoterScoreSurveyDelegate {
     var netPromoterScoreDidPressEditScoreExecutionCounter       = 0
     var netPromoterScoreSurveryCompletedExecutionCounter        = 0
     var netPromoterScoreDidPressCloseExecutionCounter           = 0
-    
-    var netPromoterScoreViewDidChangeCustomAction           : ((ADNetPromoterScoreSurvey,NetPromoterScoreViewType) -> ())?
-    var netPromoterScoreDidPressSendScoreCustomAction       : ((ADNetPromoterScoreSurvey,Int) -> ())?
-    var netPromoterScoreDidChangeScoreValueCustomAction     : ((ADNetPromoterScoreSurvey,Int) -> ())?
-    var netPromoterScoreDidPressEditScoreCustomAction       : ((ADNetPromoterScoreSurvey) -> ())?
-    var netPromoterScoreSurveryCompletedCustomAction        : ((ADNetPromoterScoreSurvey,NPSResult) -> ())?
-    var netPromoterScoreDidPressCloseCustomAction           : ((ADNetPromoterScoreSurvey,NetPromoterScoreViewType) -> ())?
-    
-    func netPromoterScoreViewDidChange(_ npsSurvey: ADNetPromoterScoreSurvey, toView: NetPromoterScoreViewType){
-        
+
+    var netPromoterScoreViewDidChangeCustomAction: ((ADNetPromoterScoreSurvey, NetPromoterScoreViewType) -> Void)?
+    var netPromoterScoreDidPressSendScoreCustomAction: ((ADNetPromoterScoreSurvey, Int) -> Void)?
+    var netPromoterScoreDidChangeScoreValueCustomAction: ((ADNetPromoterScoreSurvey, Int) -> Void)?
+    var netPromoterScoreDidPressEditScoreCustomAction: ((ADNetPromoterScoreSurvey) -> Void)?
+    var netPromoterScoreSurveryCompletedCustomAction: ((ADNetPromoterScoreSurvey, NPSResult) -> Void)?
+    var netPromoterScoreDidPressCloseCustomAction: ((ADNetPromoterScoreSurvey, NetPromoterScoreViewType) -> Void)?
+
+    func netPromoterScoreViewDidChange(_ npsSurvey: ADNetPromoterScoreSurvey, toView: NetPromoterScoreViewType) {
+
         self.netPromoterScoreViewDidChangeExecutionCounter += 1
-        self.netPromoterScoreViewDidChangeCustomAction?(npsSurvey,toView)
+        self.netPromoterScoreViewDidChangeCustomAction?(npsSurvey, toView)
     }
-    
-    func netPromoterScoreDidPressSendScore(_ npsSurvey: ADNetPromoterScoreSurvey, selectedScore: Int){
-        
+
+    func netPromoterScoreDidPressSendScore(_ npsSurvey: ADNetPromoterScoreSurvey, selectedScore: Int) {
+
         self.netPromoterScoreDidPressSendScoreExecutionCounter += 1
-        self.netPromoterScoreDidPressSendScoreCustomAction?(npsSurvey,selectedScore)
+        self.netPromoterScoreDidPressSendScoreCustomAction?(npsSurvey, selectedScore)
     }
-    
-    func netPromoterScoreDidChangeScoreValue(_ npsSurvey: ADNetPromoterScoreSurvey, newScoreValue: Int){
-        
+
+    func netPromoterScoreDidChangeScoreValue(_ npsSurvey: ADNetPromoterScoreSurvey, newScoreValue: Int) {
+
         self.netPromoterScoreDidChangeScoreValueExecutionCounter += 1
-        self.netPromoterScoreDidChangeScoreValueCustomAction?(npsSurvey,newScoreValue)
+        self.netPromoterScoreDidChangeScoreValueCustomAction?(npsSurvey, newScoreValue)
     }
-    
-    func netPromoterScoreDidPressEditScore(_ npsSurvey: ADNetPromoterScoreSurvey){
-        
+
+    func netPromoterScoreDidPressEditScore(_ npsSurvey: ADNetPromoterScoreSurvey) {
+
         self.netPromoterScoreDidPressEditScoreExecutionCounter += 1
         self.netPromoterScoreDidPressEditScoreCustomAction?(npsSurvey)
     }
-    
-    func netPromoterScoreSurveryCompleted(_ npsSurvey: ADNetPromoterScoreSurvey, surveyResult: NPSResult){
-        
+
+    func netPromoterScoreSurveryCompleted(_ npsSurvey: ADNetPromoterScoreSurvey, surveyResult: NPSResult) {
+
         self.netPromoterScoreSurveryCompletedExecutionCounter += 1
-        self.netPromoterScoreSurveryCompletedCustomAction?(npsSurvey,surveyResult)
+        self.netPromoterScoreSurveryCompletedCustomAction?(npsSurvey, surveyResult)
     }
-    
-    func netPromoterScoreDidPressClose(_ npsSurvey: ADNetPromoterScoreSurvey, fromView: NetPromoterScoreViewType){
-        
+
+    func netPromoterScoreDidPressClose(_ npsSurvey: ADNetPromoterScoreSurvey, fromView: NetPromoterScoreViewType) {
+
         self.netPromoterScoreDidPressCloseExecutionCounter += 1
-        self.netPromoterScoreDidPressCloseCustomAction?(npsSurvey,fromView)
+        self.netPromoterScoreDidPressCloseCustomAction?(npsSurvey, fromView)
     }
 }

@@ -6,7 +6,7 @@
 //  Copyright © 2017 Autodesk. All rights reserved.
 //
 
-protocol NPSThankYouViewDelegate : class{
-    
+protocol NPSThankYouViewDelegate: class {
+
     func thankYouViewDidPressClose(_ thankYouView: NPSThankYouView)
 }

@@ -6,8 +6,8 @@
 //  Copyright © 2017 Autodesk. All rights reserved.
 //
 
-protocol NPSSurveyViewDelegate : class{
-    
+protocol NPSSurveyViewDelegate: class {
+
     func surveyViewDidPressClose(_ surveyView: NPSSurveyViewProtocol, fromView: NetPromoterScoreViewType)
     func surveyViewScoreSliderValueDidChange(_ surveyView: NPSSurveyViewProtocol, newValue: Int)
     func surveyViewDidSendScore(_ surveyView: NPSSurveyViewProtocol, score: Int)

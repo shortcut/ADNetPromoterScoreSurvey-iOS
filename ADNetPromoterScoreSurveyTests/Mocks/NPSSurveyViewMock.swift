@@ -16,41 +16,41 @@ class NPSSurveyViewMock: NPSSurveyViewProtocol {
     var continueToSendDetailsViewExecutionCounter   = 0
     var backToSendScoreViewExecutionCounter         = 0
     var showThankYouViewExecutionCounter            = 0
-    
-    var showSurveyCustomAction                  : ((UIViewController) -> ())?
-    var closeSurveyCustomAction                 : (() -> ())?
-    var continueToSendDetailsViewCustomAction   : ((NetPromoterType) -> ())?
-    var backToSendScoreViewCustomAction         : (() -> ())?
-    var showThankYouViewCustomAction            : (() -> ())?
-    
-    var delegate : NPSSurveyViewDelegate?
-    
-    func showSurvey(onViewController viewController: UIViewController){
-        
+
+    var showSurveyCustomAction: ((UIViewController) -> Void)?
+    var closeSurveyCustomAction                 : (() -> Void)?
+    var continueToSendDetailsViewCustomAction: ((NetPromoterType) -> Void)?
+    var backToSendScoreViewCustomAction         : (() -> Void)?
+    var showThankYouViewCustomAction            : (() -> Void)?
+
+    weak var delegate: NPSSurveyViewDelegate?
+
+    func showSurvey(onViewController viewController: UIViewController) {
+
         self.showSurveyExecutionCounter += 1
         self.showSurveyCustomAction?(viewController)
     }
-    
-    func closeSurvey(){
-        
+
+    func closeSurvey() {
+
         self.closeSurveyExecutionCounter += 1
         self.closeSurveyCustomAction?()
     }
-    
-    func continueToSendDetailsView(promoterType: NetPromoterType){
-        
+
+    func continueToSendDetailsView(promoterType: NetPromoterType) {
+
         self.continueToSendDetailsViewExecutionCounter += 1
         self.continueToSendDetailsViewCustomAction?(promoterType)
     }
-    
-    func backToSendScoreView(){
-        
+
+    func backToSendScoreView() {
+
         self.backToSendScoreViewExecutionCounter += 1
         self.backToSendScoreViewCustomAction?()
     }
-    
-    func showThankYouView(){
-        
+
+    func showThankYouView() {
+
         self.showThankYouViewExecutionCounter += 1
         self.showThankYouViewCustomAction?()
     }

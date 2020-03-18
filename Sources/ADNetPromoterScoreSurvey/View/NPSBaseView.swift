@@ -11,14 +11,14 @@ import UIKit
 class NPSBaseView: UIView {
 
     let closeButtonContentViewHeightAddition: CGFloat = 30
-    
+
     var appearance: NPSAppearance = NPSAppearance.default
 
     init() {
         super.init(frame: .zero)
         setup()
     }
-    
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
@@ -39,42 +39,42 @@ class NPSBaseView: UIView {
         self.setupColors()
     }
 
-    func setupTexts(){
-        
+    func setupTexts() {
+
         // Should be override
     }
-    
-    func setupFonts(){
-        
+
+    func setupFonts() {
+
         // Should be override
     }
-    
-    func setupColors(){
-        
+
+    func setupColors() {
+
         // Should be override
     }
-    
-    func isCurrentlyPresented() -> Bool{
-        
+
+    func isCurrentlyPresented() -> Bool {
+
         return (self.superview != nil)
     }
-    
-    func animateIn(withDuration duration: TimeInterval, completionBlock : (() -> ())?){
-        
+
+    func animateIn(withDuration duration: TimeInterval, completionBlock : (() -> Void)?) {
+
         completionBlock?()
     }
-    
-    func animateOut(withDuration duration: TimeInterval, completionBlock : (() -> ())?){
-        
+
+    func animateOut(withDuration duration: TimeInterval, completionBlock : (() -> Void)?) {
+
         completionBlock?()
     }
-    
-    @objc func handleSwipeDownGesture(gesture: UISwipeGestureRecognizer) -> Void {
-        
+
+    @objc func handleSwipeDownGesture(gesture: UISwipeGestureRecognizer) {
+
     }
-    
+
     deinit {
-        
+
         debugPrint("deinit \(self.classForCoder)")
     }
 }

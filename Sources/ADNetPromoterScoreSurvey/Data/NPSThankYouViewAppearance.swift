@@ -8,14 +8,14 @@
 
 import UIKit
 
-@objcMembers public class NPSThankYouViewAppearance : NSObject {
+@objcMembers public class NPSThankYouViewAppearance: NSObject {
 
     public var thankYouMessageText = "Thanks for your feedback"
-    public var thankYouMessageFont : UIFont?
-    
-    public var backgroundColor          : UIColor?
-    public var thankYouMessageTextColor : UIColor?
-    public var bottomBannerColor        : UIColor?
-    
-    public var thankYouImage            : UIImage?
+    public var thankYouMessageFont: UIFont?
+
+    public var backgroundColor: UIColor?
+    public var thankYouMessageTextColor: UIColor?
+    public var bottomBannerColor: UIColor?
+
+    public var thankYouImage: UIImage?
 }
