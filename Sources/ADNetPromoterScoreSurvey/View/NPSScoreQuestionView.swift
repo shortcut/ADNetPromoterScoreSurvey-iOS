@@ -37,7 +37,7 @@ class NPSScoreQuestionView: NPSBaseView {
     @IBOutlet weak var scoreSlider: NPSSlider!
     @IBOutlet weak var notLikelyLabel: UILabel!
     @IBOutlet weak var veryLikelyLabel: UILabel!
-    
+
     override func awakeFromNib() {
         
         super.awakeFromNib()

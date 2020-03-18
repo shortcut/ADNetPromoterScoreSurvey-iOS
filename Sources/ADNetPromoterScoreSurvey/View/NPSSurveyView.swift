@@ -52,77 +52,26 @@ class NPSSurveyView: NPSBaseView
     fileprivate var _feedbackQuestionView: NPSFeedbackQuestionView?
     fileprivate var _thankYouView: NPSThankYouView?
 
-    fileprivate var scoreQuestionView: NPSScoreQuestionView? {
-        
-        get{
-            
-            if (_scoreQuestionView == nil){
-                
-                let bundle = Bundle(for: ADNetPromoterScoreSurvey.self)
-                let nib = UINib(nibName: "NPSScoreQuestionView", bundle: bundle)
-                
-                _scoreQuestionView = nib.instantiate(withOwner: nil, options: nil).first as? NPSScoreQuestionView
-                
-                if let _ = _scoreQuestionView{
-                    
-                    _scoreQuestionView!.translatesAutoresizingMaskIntoConstraints = false
-                    _scoreQuestionView!.delegate = self
-                }
-            }
-            return _scoreQuestionView
-        }
-        set{
-            
-            _scoreQuestionView = newValue
-        }
-    }
+    fileprivate lazy var scoreQuestionView: NPSScoreQuestionView? = {
+        let view = NPSScoreQuestionView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.delegate = self
+        return view
+    }()
     
-    fileprivate var feedbackQuestionView: NPSFeedbackQuestionView? {
-        
-        get{
-            
-            if (_feedbackQuestionView == nil){
-                
-                let bundle          = Bundle(for: ADNetPromoterScoreSurvey.self)
-                let nib             = UINib(nibName: "NPSFeedbackQuestionView", bundle: bundle)
-                _feedbackQuestionView    = nib.instantiate(withOwner: nil, options: nil).first as? NPSFeedbackQuestionView
-                
-                if let _ = _feedbackQuestionView {
-                    
-                    _feedbackQuestionView!.translatesAutoresizingMaskIntoConstraints = false
-                    _feedbackQuestionView!.delegate = self
-                }
-            }
-            return _feedbackQuestionView
-        }
-        set{
-            
-            _feedbackQuestionView = newValue
-        }
-    }
+    fileprivate lazy var feedbackQuestionView: NPSFeedbackQuestionView? = {
+        let view = NPSFeedbackQuestionView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.delegate = self
+        return view
+    }()
     
-    fileprivate var thankYouView: NPSThankYouView? {
-        
-        get{
-            
-            if (_thankYouView == nil){
-                
-                let bundle      = Bundle(for: ADNetPromoterScoreSurvey.self)
-                let nib         = UINib(nibName: "NPSThankYouView", bundle: bundle)
-                _thankYouView   = nib.instantiate(withOwner: nil, options: nil).first as? NPSThankYouView
-                if let _ = _thankYouView {
-                    
-                    _thankYouView!.translatesAutoresizingMaskIntoConstraints = false
-                    _thankYouView!.delegate = self
-                }
-            }
-            return _thankYouView
-        }
-        set{
-            
-            _thankYouView = newValue
-        }
-    }
+    fileprivate lazy var thankYouView: NPSThankYouView? = {
+        let view = NPSThankYouView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.delegate = self
+        return view
+    }()
     
     fileprivate func showScoreQuestionView(){
         

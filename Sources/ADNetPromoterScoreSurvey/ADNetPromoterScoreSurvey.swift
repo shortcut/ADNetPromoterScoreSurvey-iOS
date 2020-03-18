@@ -71,17 +71,12 @@ import UIKit
     }
     
     fileprivate func initSurveyView(){
-        
-        let bundle = Bundle(for: ADNetPromoterScoreSurvey.self)
-        let nib = UINib(nibName: "NPSSurveyView", bundle: bundle)
-        
-        if let surveyView = nib.instantiate(withOwner: nil, options: nil).first as? NPSSurveyView{
+
+        let surveyView = NPSSurveyView()
+        surveyView.translatesAutoresizingMaskIntoConstraints = false
             
-            surveyView.translatesAutoresizingMaskIntoConstraints = false
-            
-            self.surveyView = surveyView
-            self.surveyView!.delegate = self
-        }
+        self.surveyView = surveyView
+        self.surveyView!.delegate = self
     }
     
     fileprivate func getPromoterType(forScore: Int) -> NetPromoterType{
